@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController
 {
 
+    @IBOutlet weak var myView: UIImageView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
