@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myView: UIImageView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -23,17 +25,19 @@ class ViewController: UIViewController {
     
     @IBAction func longPressRecognizerGestureRecognizer(_ sender: UILongPressGestureRecognizer)
     {
+        
     }
     
     @IBAction func pinchGestureRecognizer(_ sender: UIPinchGestureRecognizer)
     {
         //find how to scale image from image view
         let size = sender.scale
-        var myView
+        
         myView.frame = CGRect(x: myView.frame.origin.x, y: myView.frame.origin.y, width: size * 100, height: size * 100)
     }
     @IBAction func rotateGestureRecognizer(_ sender: UIRotationGestureRecognizer)
     {
+        
     }
 }
 

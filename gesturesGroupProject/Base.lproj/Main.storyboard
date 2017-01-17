@@ -26,6 +26,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="myView" destination="jZ4-J2-hcF" id="oDy-qf-lVs"/>
                         <outlet property="pinchGestureRecognizer" destination="UpS-bD-Tph" id="4tk-Ns-j2f"/>
                         <outlet property="rotateGestureRecognizer" destination="ywY-En-qys" id="2M1-bh-nyx"/>
                         <outlet property="swipeLeft" destination="Bdq-HI-oR9" id="ldt-a4-2mI"/>
