@@ -17,11 +17,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="McLkqjGXi-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jZ4-J2-hcF">
+                                <frame key="frameInset" minX="45" minY="189" width="281" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="pinchGestureRecognizer" destination="UpS-bD-Tph" id="4tk-Ns-j2f"/>
+                        <outlet property="rotateGestureRecognizer" destination="ywY-En-qys" id="2M1-bh-nyx"/>
+                        <outlet property="swipeLeft" destination="Bdq-HI-oR9" id="ldt-a4-2mI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="4dS-jV-gDJ">
+                    <connections>
+                        <action selector="longPressRecognizerGestureRecognizer:" destination="BYZ-38-t0r" id="IgV-Vp-Mgm"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="9Rn-HW-V0W"/>
+                <swipeGestureRecognizer direction="right" id="Bdq-HI-oR9">
+                    <connections>
+                        <action selector="swipeLeftGestureRecognizer:" destination="BYZ-38-t0r" id="VNO-zG-ZIS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="UpS-bD-Tph">
+                    <connections>
+                        <action selector="pinchGestureRecognizer:" destination="BYZ-38-t0r" id="4Z7-P7-7rC"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="ywY-En-qys">
+                    <connections>
+                        <action selector="rotateGestureRecognizer:" destination="BYZ-38-t0r" id="c0V-pt-1G9"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="101.19940029985008"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="McLkqjGXi-1.png" width="2000" height="2000"/>
+    </resources>
 </document>

@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "snapchatBackground"))
+       
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//Actions
+    @IBAction func swipeLeftGestureRecognizer(_ sender: AnyObject) {
     }
-
-
+    
+    @IBAction func longPressRecognizerGestureRecognizer(_ sender: AnyObject) {
+    }
+    @IBAction func pinchGestureRecognizer(_ sender: AnyObject)
+    {
+        //find how to scale image from image view
+        let size = sender.scale
+        myView.frame = CGRect(x: myView.frame.origin.x, y: myView.frame.origin.y, width: size * 100, height: size * 100)
+    }
+    @IBAction func rotateGestureRecognizer(_ sender: AnyObject)
+    {
+    }
 }
+
+    
+
 
