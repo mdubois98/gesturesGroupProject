@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
     override func viewDidLoad()
     {
@@ -18,11 +19,14 @@ class ViewController: UIViewController {
     }
 
 //Actions
-    @IBAction func swipeLeftGestureRecognizer(_ sender: UISwipeGestureRecognizer) {
+    @IBAction func swipeLeftGestureRecognizer(_ sender: UISwipeGestureRecognizer)
+    {
+        
     }
     
     @IBAction func longPressRecognizerGestureRecognizer(_ sender: UILongPressGestureRecognizer)
     {
+        
     }
     
     @IBAction func pinchGestureRecognizer(_ sender: UIPinchGestureRecognizer)
@@ -33,6 +37,7 @@ class ViewController: UIViewController {
     }
     @IBAction func rotateGestureRecognizer(_ sender: UIRotationGestureRecognizer)
     {
+        
     }
 }
 
