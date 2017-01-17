@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     {
         //find how to scale image from image view
         let size = sender.scale
+        var myView
         myView.frame = CGRect(x: myView.frame.origin.x, y: myView.frame.origin.y, width: size * 100, height: size * 100)
     }
     @IBAction func rotateGestureRecognizer(_ sender: UIRotationGestureRecognizer)
