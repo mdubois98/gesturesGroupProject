@@ -29,10 +29,7 @@ class ViewController: UIViewController
         let size = sender.scale
         myView.frame = CGRect(x: myView.frame.origin.x, y: myView.frame.origin.y,width: size * 100, height:size * 100)
     }
-    @IBAction func rotateGestureRecognizer(_ sender: UIRotationGestureRecognizer)
-    {
-        
-    }
+  
     
     @IBAction func onViewTapped(_ sender: UITapGestureRecognizer)
     {
