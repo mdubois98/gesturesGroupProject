@@ -24,45 +24,52 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IlU-Rb-pR1">
                                 <rect key="frame" x="54" y="51" width="240" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="otJ-1S-UTe" appends="YES" id="zdm-GY-pKp"/>
+                                    <outletCollection property="gestureRecognizers" destination="hhK-F1-OKW" appends="YES" id="CtU-CL-lB9"/>
                                 </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8bG-lE-AVM" appends="YES" id="e7w-c2-Hjw"/>
+                            <outletCollection property="gestureRecognizers" destination="fuo-JW-jjf" appends="YES" id="EdI-Ni-ZZ4"/>
+                            <outletCollection property="gestureRecognizers" destination="OgT-RQ-pnW" appends="YES" id="ZZp-sI-uQF"/>
+                            <outletCollection property="gestureRecognizers" destination="8UT-kp-5aD" appends="YES" id="VNj-yB-Um2"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="myView" destination="IlU-Rb-pR1" id="pPN-WL-6Mm"/>
-                        <outlet property="pinchGestureRecognizer" destination="UpS-bD-Tph" id="4tk-Ns-j2f"/>
-                        <outlet property="rotateGestureRecognizer" destination="ywY-En-qys" id="2M1-bh-nyx"/>
-                        <outlet property="swipeLeft" destination="Bdq-HI-oR9" id="ldt-a4-2mI"/>
+                        <outlet property="myView" destination="IlU-Rb-pR1" id="E9Y-HB-3M5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="UpS-bD-Tph">
+                <tapGestureRecognizer id="8bG-lE-AVM">
                     <connections>
-                        <action selector="pinchGestureRecognizer:" destination="BYZ-38-t0r" id="4Z7-P7-7rC"/>
+                        <action selector="onViewTapped:" destination="BYZ-38-t0r" id="ED5-Vd-rpb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="fuo-JW-jjf">
+                    <connections>
+                        <action selector="onViewPinched:" destination="BYZ-38-t0r" id="kPF-TY-xBm"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <rotationGestureRecognizer id="ywY-En-qys">
+                <swipeGestureRecognizer direction="right" id="OgT-RQ-pnW">
                     <connections>
-                        <action selector="rotateGestureRecognizer:" destination="BYZ-38-t0r" id="c0V-pt-1G9"/>
-                    </connections>
-                </rotationGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="Bdq-HI-oR9">
-                    <connections>
-                        <action selector="swipeLeftGestureRecognizer:" destination="BYZ-38-t0r" id="VNO-zG-ZIS"/>
+                        <action selector="onViewSwipedRight:" destination="BYZ-38-t0r" id="g1C-II-8rF"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="9Rn-HW-V0W"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="4dS-jV-gDJ">
+                <swipeGestureRecognizer direction="left" id="8UT-kp-5aD">
                     <connections>
-                        <action selector="longPressRecognizerGestureRecognizer:" destination="BYZ-38-t0r" id="IgV-Vp-Mgm"/>
+                        <action selector="onViewSwipedLeft:" destination="BYZ-38-t0r" id="sZZ-cp-dqu"/>
                     </connections>
-                </pongPressGestureRecognizer>
-                <tapGestureRecognizer id="otJ-1S-UTe"/>
+                </swipeGestureRecognizer>
+                <rotationGestureRecognizer id="hhK-F1-OKW">
+                    <connections>
+                        <action selector="rotateAction:" destination="BYZ-38-t0r" id="kYW-wx-YpB"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="101.19940029985008"/>
         </scene>
