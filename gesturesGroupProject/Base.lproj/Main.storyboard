@@ -47,22 +47,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="8bG-lE-AVM">
                     <connections>
-                        <action selector="onViewTapped:" destination="BYZ-38-t0r" id="ED5-Vd-rpb"/>
+                        <action selector="onTapped:" destination="BYZ-38-t0r" id="7tQ-SX-PmX"/>
                     </connections>
                 </tapGestureRecognizer>
                 <pinchGestureRecognizer id="fuo-JW-jjf">
                     <connections>
-                        <action selector="onViewPinched:" destination="BYZ-38-t0r" id="kPF-TY-xBm"/>
+                        <action selector="onPinched:" destination="BYZ-38-t0r" id="kOp-Kn-jIK"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="OgT-RQ-pnW">
                     <connections>
-                        <action selector="onViewSwipedRight:" destination="BYZ-38-t0r" id="g1C-II-8rF"/>
+                        <action selector="onSwipedRight:" destination="BYZ-38-t0r" id="MH5-Jg-hfu"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="8UT-kp-5aD">
                     <connections>
-                        <action selector="onViewSwipedLeft:" destination="BYZ-38-t0r" id="sZZ-cp-dqu"/>
+                        <action selector="onSwipedLeft:" destination="BYZ-38-t0r" id="Rap-jl-rRP"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <rotationGestureRecognizer id="hhK-F1-OKW">
