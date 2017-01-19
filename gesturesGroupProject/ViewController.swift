@@ -31,7 +31,7 @@ class ViewController: UIViewController
     //}
   
     
-    @IBAction func onViewTapped(_ sender: UITapGestureRecognizer)
+    @IBAction func onTapped(_ sender: UITapGestureRecognizer)
     {
         if myView.tag == 0
         {
@@ -48,20 +48,20 @@ class ViewController: UIViewController
     }
     
   
-    @IBAction func onViewPinched(_ sender: UIPinchGestureRecognizer)
+    @IBAction func onPinched(_ sender: UIPinchGestureRecognizer)
     {
         let size = sender.scale
         myView.frame = CGRect(x: myView.frame.origin.x, y: myView.frame.origin.y,width: size * 100, height:size * 100)
     }
   
     
-    @IBAction func onViewSwipedRight(_ sender: UISwipeGestureRecognizer)
+    @IBAction func onSwipedRight(_ sender: UISwipeGestureRecognizer)
     {
         myView.alpha -= 0.1
     }
     
    
-    @IBAction func onViewSwipedLeft(_ sender: UISwipeGestureRecognizer)
+    @IBAction func onSwipedLeft(_ sender: UISwipeGestureRecognizer)
     {
         myView.alpha += 0.1
     }
