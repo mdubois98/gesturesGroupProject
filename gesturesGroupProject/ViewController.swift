@@ -67,10 +67,21 @@ class ViewController: UIViewController
     }
     @IBAction func rotateAction(_ sender: UIRotationGestureRecognizer)
     {
-        
-    }
-}
-
     
 
+        
+        }
+    
+    @IBAction func panGesture(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: self.view)
+        
+        sender.view!.center = CGPoint(x: sender.view!.center.x + translation.x, y: sender.view!.center.y + translation.y)
+        
+    }
+
+
+
+
+    
+}
 

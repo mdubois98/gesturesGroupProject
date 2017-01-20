@@ -28,6 +28,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="hhK-F1-OKW" appends="YES" id="CtU-CL-lB9"/>
+                                    <outletCollection property="gestureRecognizers" destination="0Tx-sb-ACY" appends="YES" id="ODV-wn-hOa"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -70,6 +71,11 @@
                         <action selector="rotateAction:" destination="BYZ-38-t0r" id="kYW-wx-YpB"/>
                     </connections>
                 </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0Tx-sb-ACY">
+                    <connections>
+                        <action selector="panGesture:" destination="BYZ-38-t0r" id="7Mb-b4-nwj"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="101.19940029985008"/>
         </scene>
