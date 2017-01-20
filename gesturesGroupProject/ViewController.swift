@@ -67,7 +67,7 @@ class ViewController: UIViewController
     }
     @IBAction func rotateAction(_ sender: UIRotationGestureRecognizer)
     {
-       
+        
     }
 }
 
